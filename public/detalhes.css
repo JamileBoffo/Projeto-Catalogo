@@ -1,0 +1,79 @@
+@import url('http://fonts.cdnfonts.com/css/pianaforma');
+
+* {
+    border: 0;
+    margin: 0;
+    font-family: 'Pianaforma', sans-serif;
+}
+
+nav ul{
+    padding: 0px;
+    background-color: aqua;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: aquamarine;
+    color: violet;
+    text-decoration: none;
+    border-bottom: 3px solid blue;
+}
+nav ul li a:hover{
+    background-color: green;
+    color: orange;
+    border-bottom: 3px solid yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #ffcc4e;
+}
+header h1{
+    color:#2c2100;
+}
+
+nav{
+   max-width: 350px;
+   width: 100%;
+   background-color: aquamarine; 
+}
+main{
+    display: flex;
+    padding: 60px;
+    gap: 20px;
+    background-color: #fdfc95;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section#img-container{
+    padding: 20px;
+}
+
+section#text-container{
+    display: flex;
+}
