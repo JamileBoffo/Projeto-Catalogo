@@ -1,18 +1,25 @@
-@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('http://fonts.cdnfonts.com/css/pianaforma');
 
 * {
     padding: 0;
     border: 0;
     margin: 0;
-    font-family: 'Harry Potter', sans-serif;;
+    font-family: 'Pianaforma', sans-serif;
+}
+
+header {
+    background-color: #ffcc4e;
+}
+header h1{
+    color:#2c2100;
 }
 
 main{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    background-color: #fdfc95;
 }
-
 div.product-container{
     padding: 5px;
 
@@ -23,15 +30,24 @@ div.product-container{
     flex-direction: column;
     justify-content: space-around;
 
-    background-color: brown;
+    background-color: #ff8836;
 
-    color: black;
-    border: solid 2px slategray;
+    color: #2c2100;
+    border: solid 2px #2c2100;
     border-radius: 10px;
 
 }
-
 div.product-container:hover {
-    background-color: aqua;
+    background-color: #225900;
     transform: scale(1.0);
+}
+span.title-container{
+    font-size:  150%;
+}
+span.autot-container {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
 }
