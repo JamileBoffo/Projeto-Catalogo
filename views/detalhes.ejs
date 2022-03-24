@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Titulo do catalogo</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/criar">Criar</a></li>
+                <li><a href="/editar">Editar</a></li>
+                <li><a href="/deletar">Deletar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <% produtoAt.forEach(element => { %>
+            <section class="image-container">
+                <img src="<%= element.img %> " alt="<%= element.nome %> ">
+            </section>
+            <section class="text-container">
+                <div class="details-container">
+                    <span class="nome-container">Título: <%= element.nome %> </span><br>
+                    <span class="autor-container">Autor: <%= element.autor %> </span><br>
+                    <span class="data-container">Data de Publicação: <%= element.ano_publi %> </span><br>
+                    <span class="sinopse-container">Sinopse: <%= element.sinopse %> </span>
+                </div>
+            </section>
+        <% }) %> 
+    </main>
+</body>
+</html>
