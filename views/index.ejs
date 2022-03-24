@@ -9,21 +9,22 @@
 </head>
 <body>
     <header>
-        <img src="" alt="">
         <h1>Titulo do catalogo</h1>
     </header>
     <main>
         <% produtos.forEach(element => { %>
-         <div class="product-container">
-            <div class="header-container">
-                <img src="<%= element.img %> " height="250" width="250" alt="<%= element.nome %> ">
-            </div>
-            <div class="main-container">
-                <span class="title-container"> <%= element.nome %> </span>
-                <br>
-                <span class="price-container">$ <%= element.preco %> </span>
-            </div>
-        </div>
+            <a href="/detalhes/<%= element.id %> ">
+                <div class="product-container">
+                    <div class="header-container">
+                        <img src="<%= element.img %> " height="250" width="250" alt="<%= element.nome %> ">
+                    </div>
+                <div class="main-container">
+                        <span class="title-container"> <%= element.nome %> </span>
+                        <br>
+                        <span class="autor-container"> <%= element.autor %> </span>
+                    </div>
+                </div>
+            </a>
         <% }) %>
         
     </main>
