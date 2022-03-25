@@ -28,30 +28,13 @@ nav ul li a:hover{
     border-bottom: 3px solid yellow;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #ffcc4e;
+}
+header div{
+    width: 350px;
 }
 header h1{
     color:#2c2100;
