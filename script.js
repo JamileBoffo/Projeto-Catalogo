@@ -103,3 +103,7 @@ app.get('/detalhes/:id', (req, res) =>{
     })
 })
 
+app.get('/criar', (req,res) =>{
+    res.render('adicionar.ejs', {
+    })
+})
