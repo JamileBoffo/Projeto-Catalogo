@@ -1,0 +1,135 @@
+@import url('http://fonts.cdnfonts.com/css/pianaforma');
+
+* {
+    border: 0;
+    color:#2c2100;
+    margin: 0;
+    font-family: 'Pianaforma', sans-serif;
+}
+
+nav{
+    padding-top: 5px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #ffcc4e; 
+}
+nav ul{
+    padding: 2px;
+    background-color: #ffcc4e;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: #ffcc4e;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: #225900;
+    color: #ffcc4e;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffcc4e;
+}
+header div{
+    width: 350px;
+}
+header h1{
+    padding-top: 5px;
+    color:#2c2100;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-size: cover;
+    padding: 50px;
+    background-image: url("https://www.spescoladeteatro.org.br/wp-content/uploads/2020/05/books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main h1#first{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+div#container{
+    background-color: #fdfc95;
+    width: 500px;
+    padding: 5px;
+    border: solid 2px #2c2100;
+    border-radius: 10px;
+    box-sizing: 30px;
+}
+div.card{
+    padding-left: 60px;
+    padding-bottom: 40px;
+}
+
+
+input#title{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+input#author{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}input#data{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}input#details{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}input#image{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+
+
+div.buttom{
+    padding-bottom: 20px;
+    padding-left: 190px;
+}
+button#adicionar{
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #225900;
+    border: 5px solid #225900;
+    border-radius: 5rem;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+footer{
+    padding: 5px;
+    background-color: #ffcc4e;
+    text-align: center;
+}
