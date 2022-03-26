@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Titulo do catalogo</h1>
+        <div></div>
+        <h1>Machine Book</h1>
+        <nav>
+            <ul>
+                <li><a href="/criar">Criar</a></li>
+                <li> | </li>
+                <li><a href="/editar">Editar</a></li>
+                <li> | </li>
+                <li><a href="/deletar">Deletar</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <% produtos.forEach(element => { %>
@@ -28,5 +38,8 @@
         <% }) %>
         
     </main>
+    <footer>
+        <b>Todos os diretos reservados a autora Jamile Boffo</b>
+    </footer>
 </body>
 </html>
