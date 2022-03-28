@@ -1,12 +1,15 @@
 import express from 'express'
 import path from 'path'
 
+
 const __dirname = path.resolve(path.dirname(''))
 const app = express();
 const port = 3001;
+let message = "";
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded());
 
 
 
@@ -91,8 +94,12 @@ const product = {
 const produtos = product.livros
 
 app.get('/', (req,res) =>{
+    setTimeout(() => {
+        message = "";
+    }, 1000);
     res.render('index.ejs', {
-        produtos
+        produtos,
+        message
     })
 })
 
@@ -103,7 +110,20 @@ app.get('/detalhes/:id', (req, res) =>{
     })
 })
 
-app.get('/criar', (req,res) =>{
+app.get('/adicionar', (req,res) =>{
     res.render('adicionar.ejs', {
+    });
+})
+
+
+app.post("/adicionar", (req, res) => {
+    const { title } = req.body;
+    message = `Parabéns, o título ${title} foi adicionado com sucesso!`;
+    res.redirect("/");
+});
+
+app.get('/editar', (req, res) => {
+    res.render('editar.ejs', {
+        produtos
     })
 })
