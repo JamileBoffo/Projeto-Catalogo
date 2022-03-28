@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/adicionar.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/adicionar.css">
+    <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
+    <title>Machine Book</title>
 </head>
 <body>
     <header>
-        <div></div>
+        <div>
+            <img src="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" height="40" width="50" alt="book">
+        </div>
         <h1 id="first">Machine Book</h1>
         <nav>
             <ul>
@@ -24,35 +27,37 @@
     <main>
         <div id="container">
             <h1 id="first">Adicione um novo livro!</h1>
-            <div class="card">
-                <div class="titulo">
-                    <h1>Título:</h1>
-                    <input id="title" type="text" placeholder="Digite o título" name="title">
-                </div><br>
-                <div class="autor">
-                    <h1>Autor:</h1>
-                    <input id="author" type="text" placeholder="Digite o nome do autor" name="author">
-                </div><br>
-                <div class="ano">
-                    <h1>Ano de publicação:</h1>
-                    <input id="data" type="text" placeholder="Digite o ano da publicação" name="data">
-                </div><br>
-                <div class="sinopse">
-                    <h1>Sinopse:</h1>
-                    <input id="details" type="text" placeholder="Digite uma breve sinopse" name="details">
-                </div><br>
-                <div class="imagem">
-                    <h1>Imagem:</h1>
-                    <input id="image" type= "url" name="" id="Coloque o link da capa do livro" name="img">
+            <form action="/adicionar" method="POST">
+                <div class="card">
+                    <div class="titulo">
+                        <h1>Título:</h1>
+                        <input id="title" type="text" name="title" placeholder="Digite o título" required>
+                    </div><br>
+                    <div class="autor">
+                        <h1>Autor:</h1>
+                        <input id="author" type="text" placeholder="Digite o nome do autor" name="author">
+                    </div><br>
+                    <div class="ano">
+                        <h1>Ano de publicação:</h1>
+                        <input id="data" type="text" placeholder="Digite o ano da publicação" name="data">
+                    </div><br>
+                    <div class="sinopse">
+                        <h1>Sinopse:</h1>
+                        <textarea id="details" rows="10" cols="32" maxlength="400" placeholder="Digite uma breve sinopse"></textarea>
+                    </div><br>
+                    <div class="imagem">
+                        <h1>Imagem:</h1>
+                        <input id="image" type= "url" placeholder="Digite o link da capa do livro" name="img">
+                    </div>
                 </div>
-            </div>
-            <div class="buttom">
-                <button id="adicionar">Adicionar</button>
-            </div>
+                <div class="buttom">
+                    <button id="adicionar">Adicionar</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
-        <b>Todos os diretos reservados a autora Jamile Boffo</b>
+        <b>Todos os direitos reservados a autora Jamile Boffo</b>
     </footer>
 </body>
 </html>
