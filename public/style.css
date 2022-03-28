@@ -48,6 +48,29 @@ header h1{
 }
 
 
+section#message {
+    padding: 4px;
+    background-color: rgb(197, 255, 214);
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span#close {
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s;
+} 
+span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+}
+
 
 main{
     display: flex;
