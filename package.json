@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "script.js",
+  "type": "module",
   "scripts": {
     "start": "node index",
     "dev": "nodemon index"
@@ -21,7 +22,10 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
   }
 }
