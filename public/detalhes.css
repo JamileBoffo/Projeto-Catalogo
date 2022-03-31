@@ -61,6 +61,7 @@ section#img-container{
     padding: 20px;
 }
 img#foto{
+    width: 400px;
     border: solid 2px #2c2100;
 }
 
