@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/editar.css">
+    <link rel="stylesheet" href="/editar.css">
     <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
     <title>Machine Book</title>
 </head>
@@ -32,20 +32,20 @@
                     <div class="opcoes-titulo">
                         <h1>Qual título deseja editar?</h1>
                         <select name="select-title" id="select-title">
-                            <% produtos.forEach(element => { %>
-                                <option value="esctitle"> <%= element.nome %>  </option>
-                            <% }) %>
+                            <% produtoAt.forEach(element => { %>  
+                              <option value="esctitle"> <%= element.titulo %>  </option>
+                            <% }) %>  
                         </select>
                     </div>
                     <br>
                     <div class="opcoes-item">
                         <h1>Qual item deseja alterar?</h1>
                         <select name="select-item" id="select-item">
-                            <option value="title">Título</option>
-                            <option value="author">Autor</option>
-                            <option value="data">Data de Publicação</option>
-                            <option value="details">Sinopse</option>
-                            <option value="image">Imagem</option>
+                            <option value="title" name="titulo">Título</option>
+                            <option value="author" name="'autores">Autor</option>
+                            <option value="data" name="ano">Data de Publicação</option>
+                            <option value="details" name="sinopse">Sinopse</option>
+                            <option value="image" name="img">Imagem</option>
                         </select>
                     </div>
                     <br>
@@ -54,7 +54,7 @@
                     </div>
                     <br>
                     <div class="buttom">
-                        <button id="editar">Editar</button>
+                        <button id="editar" type="submit">Editar</button>
                     </div>
                 </div>
             </form>
