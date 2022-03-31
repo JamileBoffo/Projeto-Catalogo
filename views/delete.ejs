@@ -13,28 +13,40 @@
         <div>
             <img src="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" height="40" width="50" alt="book">
         </div>
-        <h1>Machine Book</h1>
+        <h1 id="first">Machine Book</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="/"><b>Home</b></a></li>
                 <li> | </li>
-                <li><a href="/adicionar">Adicionar</a></li>
+                <li><a href="/adicionar"><b>Adicionar</b></a></li>
                 <li> | </li>
-                <li><a href="/editar">Editar</a></li>
+                <li><a href="/editar"><b>Editar</b></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <select name="select-title" id="select-title">
-            <% produtoAt.forEach(element => { %>  
-              <option value="esctitle"> <%= element.titulo %>  </option>
-            <% }) %>  
-        </select>
-        <a href="/delete ">
-        <button type="button" class="botao-delete">
-            Deletar
-        </button>
-    </a>
+        <div id="container">
+            <h1 id="first">Delete um livro!</h1>
+            <form action="/delete" method="POST">
+                <div class="card">
+                    <div class="opcoes-titulo">
+                        <h1>Qual título deseja editar?</h1>
+                        <br>
+                        <select name="select-title" id="select-title">
+                            <% produtoAt.forEach(element => { %>  
+                              <option value="esctitle"> <%= element.titulo %>  </option>
+                            <% }) %>  
+                        </select>
+                    </div>
+                    <br>
+                    <div class="buttom">
+                        <a href="/delete ">
+                            <button type="button" class="botao-delete">Deletar</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <b>Todos os direitos reservados a autora Jamile Boffo</b>
