@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
     <title>Machine Book</title>
 </head>
@@ -25,30 +25,30 @@
         </nav>
     </header>
     <% if(message != "") {  %>
-            <section id="message">
-                <p><%= message %></p> <span id="close">&times;</span>
-            </section>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
     <% }  %>
+    
     <main>
-        <% produtos.forEach(element => { %>
+        <% livros.forEach(element => { %>
             <a href="/detalhes/<%= element.id %> ">
                 <div class="product-container">
                     <div class="header-container">
-                        <img src="<%= element.img %> " height="250" width="250" alt="<%= element.nome %> ">
+                        <img src="<%= element.img %> " height="250" width="250" alt="<%= element.titulo %> ">
                     </div>
                 <div class="main-container">
-                        <span class="title-container"> <%= element.nome %> </span>
+                        <span class="title-container"> <%= element.titulo %> </span>
                         <br>
-                        <span class="autor-container"> <%= element.autor %> </span>
+                        <span class="autor-container"> <%= element.autores %> </span>
                     </div>
                 </div>
             </a>
         <% }) %>
-        
     </main>
     <footer>
         <b>Todos os direitos reservados a autora Jamile Boffo</b>
     </footer>
-    <script src="/js/scriptclose.js"></script>
+    <script src="./public/js/scriptclose.js"></script>
 </body>
 </html>
