@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/detalhes.css">
+    <link rel="stylesheet" href="/detalhes.css">
     <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
     <title>Machine Book</title>
 </head>
@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li> | </li>
-                <li><a href="/criar">Criar</a></li>
+                <li><a href="/adicionar">Adicionar</a></li>
                 <li> | </li>
                 <li><a href="/editar">Editar</a></li>
                 <li> | </li>
@@ -28,20 +28,20 @@
     </header>
 
     <main>
-        <% produtoAt.forEach(element => { %>
+  
             <section class="image-container">
-                <img id="foto" src="<%= element.img %> " alt="<%= element.nome %> ">
+                <img id="foto" src="<%= produtoAt.img %> " alt="<%= produtoAt.titulo %> ">
             </section>
             <section class="text-container">
                 <div class="details-container">
                     
-                    <span class="nome-container"><b>Título:</b>  <%= element.nome %> </span><br>
-                    <span class="autor-container"><b>Autor:</b>   <%= element.autor %> </span><br>
-                    <span class="data-container"><b>Data de Publicação:</b>   <%= element.ano_publi %> </span><br>
-                    <span class="sinopse-container"><b>Sinopse:</b>   <%= element.sinopse %> </span>
+                    <span class="nome-container"><b>Título:</b>  <%= produtoAt.titulo %> </span><br>
+                    <span class="autor-container"><b>Autor:</b>   <%= produtoAt.autores %> </span><br>
+                    <span class="data-container"><b>Data de Publicação:</b>   <%= produtoAt.ano %> </span><br>
+                    <span class="sinopse-container"><b>Sinopse:</b>   <%= produtoAt.sinopse %> </span>
                 </div>
             </section>
-        <% }) %> 
+ 
     </main>
     <footer>
         <b>Todos os direitos reservados a autora Jamile Boffo</b>
