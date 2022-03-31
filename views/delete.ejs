@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" height="40" width="50" alt="book">
+        </div>
+        <h1>Machine Book</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li> | </li>
+                <li><a href="/adicionar">Adicionar</a></li>
+                <li> | </li>
+                <li><a href="/editar">Editar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <select name="select-title" id="select-title">
+            <% produtoAt.forEach(element => { %>  
+              <option value="esctitle"> <%= element.titulo %>  </option>
+            <% }) %>  
+        </select>
+        <a href="/delete ">
+        <button type="button" class="botao-delete">
+            Deletar
+        </button>
+    </a>
+    </main>
+    <footer>
+        <b>Todos os direitos reservados a autora Jamile Boffo</b>
+    </footer>
+    <script src="./public/js/deletar.js"></script>
+</body>
+</html>
