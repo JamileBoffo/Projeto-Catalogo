@@ -1,25 +1,94 @@
 @import url('http://fonts.cdnfonts.com/css/pianaforma');
 
 * {
-    padding: 0;
     border: 0;
     margin: 0;
+    color:#2c2100;
     font-family: 'Pianaforma', sans-serif;
 }
 
+nav{
+    padding-top: 5px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #ffcc4e; 
+}
+nav ul{
+    padding: 2px;
+    background-color: #ffcc4e;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: #ffcc4e;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: #225900;
+    color: #ffcc4e;
+}
+
+
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: #ffcc4e;
 }
-header h1{
+header div{
+    width: 350px;
+}
+div.art{
+    display: flex;
+    padding-top: 5px;
+    padding-left: 60px;
     color:#2c2100;
 }
+div.art h1{
+    padding-left: 30px;
+}
+
+
+section#message {
+    padding: 4px;
+    background-color: rgb(197, 255, 214);
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span#close {
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s;
+} 
+span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+}
+
 
 main{
     display: flex;
+    padding: 60px;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-bottom: 60px;
     flex-wrap: wrap;
     gap: 20px;
     background-color: #fdfc95;
 }
+
+
 div.product-container{
     padding: 5px;
 
@@ -41,13 +110,32 @@ div.product-container:hover {
     background-color: #225900;
     transform: scale(1.0);
 }
+div.buttom-container{
+    display: flex;
+}
+img.editar-icon{
+    width:20px;
+    height: 20px;
+}
+img.delete-icon{
+    width: 20px;
+    height: 20px;
+}
 span.title-container{
     font-size:  150%;
 }
-span.autot-container {
+span.autor-container {
     font-size: 100%;
 }
 
+
 a {
     text-decoration: none;
+}
+
+
+footer{
+    padding: 5px;
+    background-color: #ffcc4e;
+    text-align: center;
 }
