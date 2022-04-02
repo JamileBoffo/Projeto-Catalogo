@@ -5,43 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/detalhes.css">
-    <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
+    <link rel="icon" type="imagem/png" href="https://static.vecteezy.com/system/resources/previews/001/200/097/large_2x/book-png.png" />
     <title>Machine Book</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" height="40" width="50" alt="book">
         </div>
-        <h1>Machine Book</h1>
+        <div class="art">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/200/097/large_2x/book-png.png" height="35" width="45" alt="book">
+            <h1>Machine Book</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li> | </li>
-                <li><a href="/adicionar">Adicionar</a></li>
-                <li> | </li>
-                <li><a href="/editar">Editar</a></li>
-                <li> | </li>
-                <li><a href="/deletar">Deletar</a></li>
+                <li><a href="/adicionar"><b>Adicionar Novo Título</b></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-  
-            <section class="image-container">
-                <img id="foto" src="<%= produtoAt.img %> " alt="<%= produtoAt.titulo %> ">
-            </section>
-            <section class="text-container">
-                <div class="details-container">
-                    
-                    <span class="nome-container"><b>Título:</b>  <%= produtoAt.titulo %> </span><br>
-                    <span class="autor-container"><b>Autor:</b>   <%= produtoAt.autores %> </span><br>
-                    <span class="data-container"><b>Data de Publicação:</b>   <%= produtoAt.ano %> </span><br>
-                    <span class="sinopse-container"><b>Sinopse:</b>   <%= produtoAt.sinopse %> </span>
-                </div>
-            </section>
- 
+        <section class="image-container">
+            <img id="foto" src="<%= produtoAt.img %> " alt="<%= produtoAt.titulo %> ">
+        </section>
+        <section class="text-container">
+            <div class="details-container">  
+                <span class="nome-container"><b>Título:</b>  <%= produtoAt.titulo %> </span><br>
+                <span class="autor-container"><b>Autor:</b>   <%= produtoAt.autores %> </span><br>
+                <span class="data-container"><b>Data de Publicação:</b>   <%= produtoAt.ano %> </span><br>
+                <span class="sinopse-container"><b>Sinopse:</b>   <%= produtoAt.sinopse %> </span>
+            </div>
+        </section>
     </main>
     <footer>
         <b>Todos os direitos reservados a autora Jamile Boffo</b>
