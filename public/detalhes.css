@@ -41,9 +41,14 @@ header {
 header div{
     width: 400px;
 }
-header h1{
+div.art{
+    display: flex;
     padding-top: 5px;
+    padding-left: 30px;
     color:#2c2100;
+}
+div.art h1{
+    padding-left: 30px;
 }
 
 
@@ -70,7 +75,6 @@ span{
     display: flex;
     font-size: 25px;
 }
-
 
 footer{
     padding: 5px;
