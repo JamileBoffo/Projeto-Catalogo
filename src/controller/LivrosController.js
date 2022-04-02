@@ -4,9 +4,7 @@ let message = '';
 
 export const getIndex = async (req,res) =>{
     try {
-        const livros = await variados.findAll({
-            order: [['titulo', 'ASC']]
-        });
+        const livros = await variados.findAll();
         setTimeout(() => {
         message = "";
         }, 1000);
