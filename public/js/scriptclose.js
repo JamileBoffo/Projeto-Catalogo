@@ -7,4 +7,8 @@ closeMessage.addEventListener("click", function (){
 
 setTimeout(() => {
     message.style.display = "none"
+<<<<<<< HEAD
 }, 5000)
+=======
+}, 5000)
+>>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de

@@ -68,6 +68,21 @@ section#img-container{
 img#foto{
     width: 400px;
     border: solid 2px #2c2100;
+<<<<<<< HEAD
+=======
+}
+
+
+span{
+    display: flex;
+    font-size: 25px;
+}
+
+footer{
+    padding: 5px;
+    background-color: #ffcc4e;
+    text-align: center;
+>>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de
 }
 
 
