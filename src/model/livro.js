@@ -1,7 +1,7 @@
 import Sequelize from 'sequelize'
 import { connection } from '../database/connection.js'
 
-export const variados = connection.define('variados', {
+export const variados = connection.define("variados", {
     id: {
         type: Sequelize.INTEGER,
         allowNull: false,
