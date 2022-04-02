@@ -43,9 +43,14 @@ header {
 header div{
     width: 350px;
 }
-header h1{
+div.art{
+    display: flex;
     padding-top: 5px;
+    padding-left: 30px;
     color:#2c2100;
+}
+div.art h1{
+    padding-left: 30px;
 }
 
 
@@ -67,7 +72,9 @@ main h1#first{
     text-align: center;
     font-size: 50px;
 }
-
+main label{
+    font-size: 30px;
+}
 
 div#container{
     background-color: #fdfc95;
