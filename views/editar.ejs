@@ -4,58 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/editar.css">
-    <link rel="icon" type="imagem/png" href="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" />
+    <link rel="stylesheet" href="/adicionar.css">
+    <link rel="icon" type="imagem/png" href="https://static.vecteezy.com/system/resources/previews/001/200/097/large_2x/book-png.png" />
     <title>Machine Book</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="https://www.nozartes.com.br/wp-content/uploads/2020/03/ico-livro-branco.png" height="40" width="50" alt="book">
         </div>
-        <h1 id="first">Machine Book</h1>
+        <div class="art">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/200/097/large_2x/book-png.png" height="35" width="45" alt="book">
+            <h1>Machine Book</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="/"><b>Home</b></a></li>
-                <li> | </li>
-                <li><a href="/adicionar"><b>Adicionar</b></a></li>
-                <li> | </li>
-                <li><a href="/deletar"><b>Deletar</b></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="container">
-            <h1 id="first">Editar um livro!</h1>
-            <form action="/editar" method="POST">
+            <h1 id="first">Editar <%= produtoAt.titulo %>  </h1>
+            <form action="/editar/<%= produtoAt.id %> " method="post">
                 <div class="card">
-                    <div class="opcoes-titulo">
-                        <h1>Qual título deseja editar?</h1>
-                        <select name="select-title" id="select-title">
-                            <% produtoAt.forEach(element => { %>  
-                              <option value="esctitle"> <%= element.titulo %>  </option>
-                            <% }) %>  
-                        </select>
+                    <div class="titulo">
+                        <label for="titutlo"> Título: </label><br>
+                        <input id="title" type="text" name="titulo" value=" <%= produtoAt.titulo %> " required>
+                    </div><br>
+                    <div class="autor">
+                        <label for="autores"> Autor: </label><br>
+                        <input id="author" type="text" value=" <%= produtoAt.autores %> " name="autores">
+                    </div><br>
+                    <div class="ano">
+                        <label for="ano"> Ano de Publicação: </label><br>
+                        <input id="number" type="text" value=" <%= produtoAt.ano %> " name="ano">
+                    </div><br>
+                    <div class="sinopse">
+                        <label for="sinopse"> Sinopse: </label><br>
+                        <textarea id="details" rows="10" cols="32" maxlength="400" aria-text=" <%= produtoAt.sinopse %> " name="sinopse"></textarea>
+                    </div><br>
+                    <div class="imagem">
+                        <label for="img"> Imagem: </label>
+                        <input id="image" type= "url" value=" <%= produtoAt.img %> " name="img">
                     </div>
-                    <br>
-                    <div class="opcoes-item">
-                        <h1>Qual item deseja alterar?</h1>
-                        <select name="select-item" id="select-item">
-                            <option value="title" name="titulo">Título</option>
-                            <option value="author" name="'autores">Autor</option>
-                            <option value="data" name="ano">Data de Publicação</option>
-                            <option value="details" name="sinopse">Sinopse</option>
-                            <option value="image" name="img">Imagem</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="edicao">
-                        <textarea id="edit" rows="5" cols="35" maxlength="500" placeholder="Digite aqui sua alteração"></textarea>
-                    </div>
-                    <br>
-                    <div class="buttom">
-                        <button id="editar" type="submit">Editar</button>
-                    </div>
+                </div>
+                <div class="buttom">
+                    <button id="adicionar" type="submit">Editar</button>
                 </div>
             </form>
         </div>
