@@ -42,9 +42,14 @@ header {
 header div{
     width: 350px;
 }
-header h1{
+div.art{
+    display: flex;
     padding-top: 5px;
+    padding-left: 60px;
     color:#2c2100;
+}
+div.art h1{
+    padding-left: 30px;
 }
 
 
@@ -74,8 +79,9 @@ span#close:hover{
 
 main{
     display: flex;
+    padding: 60px;
     padding-top: 60px;
-    padding-left: 110px;
+    padding-left: 75px;
     padding-bottom: 60px;
     flex-wrap: wrap;
     gap: 20px;
@@ -104,8 +110,17 @@ div.product-container:hover {
     background-color: #225900;
     transform: scale(1.0);
 }
-
-
+div.buttom-container{
+    display: flex;
+}
+img.editar-icon{
+    width:20px;
+    height: 20px;
+}
+img.delete-icon{
+    width: 20px;
+    height: 20px;
+}
 span.title-container{
     font-size:  150%;
 }
