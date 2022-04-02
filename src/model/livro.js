@@ -38,3 +38,5 @@ export const variados = connection.define("variados", {
 const initTable = async () => {
     await variados.sync()
 }
+
+initTable()
