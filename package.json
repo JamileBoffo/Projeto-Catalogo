@@ -2,7 +2,7 @@
   "name": "projeto-catalogo",
   "version": "0.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
@@ -26,12 +26,10 @@
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "pg": "^8.7.3",
-<<<<<<< HEAD
+
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.17.0",
     "yarn": "^1.22.18"
-=======
-    "sequelize": "^6.17.0"
->>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de
   }
 }
+
