@@ -1,0 +1,35 @@
+{
+  "name": "projeto-catalogo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamileBoffo/Projeto-Catalogo.git"
+  },
+  "author": "Jamile Boffo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamileBoffo/Projeto-Catalogo/issues"
+  },
+  "homepage": "https://github.com/JamileBoffo/Projeto-Catalogo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.17.0",
+    "yarn": "^1.22.18"
+  }
+}
+
