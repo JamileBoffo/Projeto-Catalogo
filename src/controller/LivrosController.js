@@ -79,8 +79,4 @@ export const getDel = async (req,res) => {
     catch(err){
         res.status(500).send(err.message)
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de

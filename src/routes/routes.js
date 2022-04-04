@@ -14,8 +14,7 @@ routes.post("/adicionar", postAdd);
 routes.get('/editar/:id', getEd);
 routes.post('/editar/:id', postEd);
 
-<<<<<<< HEAD
+
 routes.get('/delete/:id', getDel);
-=======
-routes.get('/delete/:id', getDel);
->>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de
+
+
