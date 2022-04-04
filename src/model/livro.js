@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize'
-import { connection } from '../database/connection.js'
+import { connection } from './../database/connection.js'
 
 export const variados = connection.define("variados", {
     id: {
