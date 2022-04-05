@@ -119,6 +119,10 @@ input#img{
     border: solid 1px gray;
 }
 
+div.buttom{
+    padding-bottom: 20px;
+    padding-left: 190px;
+}
 
 button#adicionar{
     padding: 10px;
