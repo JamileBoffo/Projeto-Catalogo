@@ -52,7 +52,9 @@ div.art h1{
     padding-left: 30px;
 }
 
-
+span.title-container{
+    display: flex;
+}
 section#message {
     padding: 4px;
     background-color: rgb(197, 255, 214);
