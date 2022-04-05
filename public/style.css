@@ -88,11 +88,7 @@ main{
     background-color: #fdfc95;
 }
 
-span.title-container{
-    display: flex;
-    width: 300px;
-    justify-content: center;
-}
+
 div.product-container{
     padding: 5px;
 
@@ -113,6 +109,15 @@ div.product-container{
 div.product-container:hover {
     background-color: #225900;
     transform: scale(1.0);
+}
+
+
+span.title-container{
+    display: flex;
+    width: 300px;
+}
+div.header-container img{
+    width: 310px;
 }
 
 
