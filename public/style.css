@@ -90,6 +90,8 @@ main{
 
 
 div.product-container{
+    height: 338px;
+    width: 320px;
     padding: 5px;
 
     text-align: center;
