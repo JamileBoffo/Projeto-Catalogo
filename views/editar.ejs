@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/adicionar.css">
+    <link rel="stylesheet" href="/editar.css">
     <link rel="icon" type="imagem/png" href="https://static.vecteezy.com/system/resources/previews/001/200/097/large_2x/book-png.png" />
     <title>Machine Book</title>
 </head>
@@ -29,23 +29,23 @@
                 <div class="card">
                     <div class="titulo">
                         <label for="titutlo"> Título: </label><br>
-                        <input id="title" type="text" name="titulo" value=" <%= produtoAt.titulo %> " required>
+                        <input id="titulo" type="text" name="titulo" value=" <%= produtoAt.titulo %> " required>
                     </div><br>
                     <div class="autor">
                         <label for="autores"> Autor: </label><br>
-                        <input id="author" type="text" value=" <%= produtoAt.autores %> " name="autores">
+                        <input id="autores" type="text" value=" <%= produtoAt.autores %> " name="autores">
                     </div><br>
                     <div class="ano">
                         <label for="ano"> Ano de Publicação: </label><br>
-                        <input id="number" type="text" value=" <%= produtoAt.ano %> " name="ano">
+                        <input id="ano" type="text" value=" <%= produtoAt.ano %> " name="ano">
                     </div><br>
                     <div class="sinopse">
                         <label for="sinopse"> Sinopse: </label><br>
-                        <textarea id="details" rows="10" cols="32" maxlength="400" aria-text=" <%= produtoAt.sinopse %> " name="sinopse"></textarea>
+                        <textarea id="sinopse" rows="10" cols="32" maxlength="400" aria-text=" <%= produtoAt.sinopse %> " name="sinopse"></textarea>
                     </div><br>
                     <div class="imagem">
                         <label for="img"> Imagem: </label><br>
-                        <input id="image" type= "url" value=" <%= produtoAt.img %> " name="img">
+                        <input id="img" type= "url" value=" <%= produtoAt.img %> " name="img">
                     </div>
                 </div>
                 <div class="buttom">

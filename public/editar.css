@@ -87,6 +87,40 @@ div.card{
     padding-bottom: 40px;
 }
 
+input#titulo{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+input#autores{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+input#ano{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+textarea#sinopse{
+    font-size: 20px;
+    border: solid 1px gray;
+}
+input#img{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    border: solid 1px gray;
+}
+
+
+div.buttom{
+    padding-bottom: 20px;
+    padding-left: 190px;
+}
 
 div.opcoes-titulo h1{
     font-size: 30px;
@@ -135,8 +169,4 @@ footer{
     padding: 5px;
     background-color: #ffcc4e;
     text-align: center;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 971676bc950aed979d5760c9ae50e4c1bc5f38de
