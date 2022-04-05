@@ -97,7 +97,7 @@ div.product-container{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 
     background-color: #ff8836;
 
