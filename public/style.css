@@ -110,6 +110,10 @@ div.product-container:hover {
     background-color: #225900;
     transform: scale(1.0);
 }
+
+span.title-container{
+    display: flex;
+}
 div.buttom-container{
     display: flex;
 }
