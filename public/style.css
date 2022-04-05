@@ -91,7 +91,7 @@ main{
 span.title-container{
     display: flex;
     width: 300px;
-    align-items: center;
+    justify-content: center;
 }
 div.product-container{
     padding: 5px;
