@@ -91,7 +91,8 @@ main{
 
 div.product-container{
     padding: 5px;
-
+    width: 264px;
+    height: 338px;
     text-align: center;
     align-items: center;
 
