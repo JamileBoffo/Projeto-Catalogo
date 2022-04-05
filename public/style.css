@@ -111,9 +111,7 @@ div.product-container:hover {
     transform: scale(1.0);
 }
 
-div.main-container{
-    display: flex;
-}
+
 div.buttom-container{
     display: flex;
 }
