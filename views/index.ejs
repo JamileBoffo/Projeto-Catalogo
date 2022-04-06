@@ -32,23 +32,25 @@
     
     <main>
         <% livros.forEach(element => { %>
-            <a href="/detalhes/<%= element.id %> ">
+            
                 <div class="product-container">
-                    <div class="header-container">
-                        <img src="<%= element.img %> " height="250" width="250" alt="<%= element.titulo %> ">
-                    </div>
-                    <div class="main-container">
-                        <span class="title-container"> <%= element.titulo %> </span>
-                        <br>
-                        <span class="autor-container"> <%= element.autores %> </span>
-                        <br>
-                        <div class="button-container">
-                            <a href="/delete/<%= element.id %> "><img class="delete-icon" src="https://cdn-icons-png.flaticon.com/512/18/18297.png" alt="delete-icon"></a>
-                            <a href="/editar/<%= element.id %> "> <img class="editar-icon" src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="editar-icon"></a> 
+                    <a href="/detalhes/<%= element.id %> ">
+                        <div class="header-container">
+                            <img src="<%= element.img %> " height="250" width="250" alt="<%= element.titulo %> ">
                         </div>
-                    </div>
+                        <div class="main-container">
+                            <span class="title-container"> <%= element.titulo %> </span>
+                            <br>
+                            <span class="autor-container"> <%= element.autores %> </span>
+                            <br>
+                            <div class="button-container">
+                                <a href="/delete/<%= element.id %> "><img class="delete-icon" src="https://cdn-icons-png.flaticon.com/512/18/18297.png" alt="delete-icon"></a>
+                                <a href="/editar/<%= element.id %> "> <img class="editar-icon" src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="editar-icon"></a> 
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            
         <% }) %>
     </main>
     <footer>
